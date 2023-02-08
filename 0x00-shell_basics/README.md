@@ -5,3 +5,4 @@ My fourth script-Display current directory contents in a long format.
 My fifth script-i am to display current directory contents, including hidden files.
 My sixth script-i am to display current directory contents long format with user and group IDs displayed numerically And hidden files (starting with .)
 My seventh script-i am to create my_first_directory in the /tmp/ directory.
+My eight script-i am to Move the file betty from /tmp/ to /tmp/my_first_directory.
