@@ -7,3 +7,4 @@ My sixth script-i am to display current directory contents long format with user
 My seventh script-i am to create my_first_directory in the /tmp/ directory.
 My eight script-i am to Move the file betty from /tmp/ to /tmp/my_first_directory.
 My ninth script-i am to Delete the file betty.
+My tenth script-iam to Delete the directory my_first_directory.
