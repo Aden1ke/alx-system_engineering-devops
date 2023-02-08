@@ -3,3 +3,4 @@ My second script-i am to display the contents list of my current directory.
 My third script-i am to Write a script that changes the working directory to the user’s home directory.
 My fourth script-Display current directory contents in a long format.
 My fifth script-i am to display current directory contents, including hidden files.
+My sixth script-i am to display current directory contents long format with user and group IDs displayed numerically And hidden files (starting with .)
