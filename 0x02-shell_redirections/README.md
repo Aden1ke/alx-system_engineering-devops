@@ -5,3 +5,4 @@ my 3rd script is to print the content of /etc/passwd and /etc/host.
 my 4th script is to print the last 10 lines of a file.
 my 5th script is to print the first 10 lines of a file.
 my 6th script is to print the 3rd line of a file.
+my 7th script is to create afile and writing inside it at the same time.
