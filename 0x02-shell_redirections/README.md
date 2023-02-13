@@ -6,4 +6,5 @@ my 4th script is to print the last 10 lines of a file.
 my 5th script is to print the first 10 lines of a file.
 my 6th script is to print the 3rd line of a file.
 my 7th script is to create afile and writing inside it at the same time.
-my 8th script is to displai ls -l into a file.
+my 8th script is to display ls -l into a file.
+my 9th script is to duplicate the last line of a file.
