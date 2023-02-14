@@ -8,3 +8,4 @@ my 6th script is to print the 3rd line of a file.
 my 7th script is to create afile and writing inside it at the same time.
 my 8th script is to display ls -l into a file.
 my 9th script is to duplicate the last line of a file.
+my 10th script is to delete set of files(.js) from a directory and subdirectirs.
