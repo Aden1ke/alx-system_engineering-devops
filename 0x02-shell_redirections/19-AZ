@@ -1,2 +1,2 @@
 #!/bin/bash
-tr 'Ac' 'z\e' < .
+tr 'A' 'z'|tr 'c' 'e'
