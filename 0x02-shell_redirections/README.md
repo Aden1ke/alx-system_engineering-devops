@@ -9,3 +9,5 @@ my 7th script is to create afile and writing inside it at the same time.
 my 8th script is to display ls -l into a file.
 my 9th script is to duplicate the last line of a file.
 my 10th script is to delete set of files(.js) from a directory and subdirectirs.
+my 11th script is to count the number of directories and sub-directories.
+my 12th scrript is to print the 10 newest files in a directory.
