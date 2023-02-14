@@ -1,2 +1,2 @@
 #!/bin/bash
-sed 's/A,C/Z,e/g'
+tr 'AC' 'Z\e' < .
