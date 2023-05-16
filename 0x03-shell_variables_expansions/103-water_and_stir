@@ -1,0 +1,2 @@
+#!/bin/bash 
+result=$((WATER#water + STIR#stir)); printf "%#bestchol\n" $result
