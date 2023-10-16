@@ -1,5 +1,5 @@
-#!/usr/bin/python3
-## This script configures an Ubuntu server:
+#!/usr/bin/env bash
+# This script configures an Ubuntu server:
 # localhost resolves to 127.0.0.2
 # facebook.com resolves to 8.8.8.8
 ifconfig | grep 'inet addr' | awk '{print $2}' | cut -d ':' -f 2
