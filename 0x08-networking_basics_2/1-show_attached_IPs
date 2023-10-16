@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Use the 'ifconfig' command to get network interface information
+ifconfig | grep 'inet addr' | awk '{print $2}' | cut -d ':' -f 2
+
