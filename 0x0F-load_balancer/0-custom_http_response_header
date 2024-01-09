@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+
+# Install Nginx
+sudo apt-get update
+sudo apt-get install -y nginx
+
+# Obtain the hostname of the server
+hostname=$(hostname)
+
+# Create HTML files
+sudo mkdir /etc/nginx/html
+sudo sh -c "echo 'Hello World!' > /etc/nginx/html/index.html"
+sudo sh -c "echo 'Ceci n'est pas une page' > /etc/nginx/html/404.html"
+
+# Create a custom Nginx configuration file
+sudo sh -c "echo '
+server {
+    listen 80;
+
+    # Other Nginx configuration directives...
+
+    # Add custom header
+    add_header X-Served-By $hostname;
+
+    # Other Nginx configuration directives...
+
+    location / {
+        root /etc/nginx/html;
+        index index.html index.htm;
+    }
+
+    location /redirect_me {
+        return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
+    }
+
+    error_page 404 /404.html;
+    location /404 {
+        root /etc/nginx/html;
+        internal;
+    }
+}' > /etc/nginx/sites-available/default"
+
+# Reload Nginx to apply the changes
+sudo systemctl reload nginx
