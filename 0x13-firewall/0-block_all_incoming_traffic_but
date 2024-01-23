@@ -1,5 +1,6 @@
-sudo apt update
-sudo apt install ufw
+sudo apt-get upgrade
+sudo apt-get update
+sudo apt-get install ufw
 sudo ufw default deny incoming
 sudo ufw defualt allow outgoing
 sudo ufw allow 22
