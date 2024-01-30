@@ -3,7 +3,7 @@
 
 import csv
 import requests
-from sys import argv as av
+import sys
 
 
 if __name__ == "__main__":
