@@ -3,12 +3,24 @@
 import requests
 import sys
 
-if __name__ == "__main__":
-    url = "https://jsonplaceholder.typicode.com/"
-    user = requests.get(url + "users/{}".format(sys.argv[1])).json()
-    todos = requests.get(url + "todos", params={"userId": sys.argv[1]}).json()
+__name__ == "__main__":
+    base_url = "https://jsonplaceholder.typicode.com/users/"
 
-    completed = [t.get("title") for t in todos if t.get("completed") is True]
+    user_data = requests.get(base_url + "{}".format(av[1])).json()
+    todo_data = requests.get(base_url + "{}/todos".format(av[1])).json()
+
+    employee_name = user_data.get("name")
+    # print(employee_name)
+    finished_tasks = []
+    finished = 0
+
+    for todo in todo_data:
+        if todo.get("completed"):
+            finished_tasks.append(todo)
+            finished += 1
+
     print("Employee {} is done with tasks({}/{}):".format(
-        user.get("name"), len(completed), len(todos)))
-    [print("\t {}".format(c)) for c in completed]
+        employee_name, finished, len(todo_data)))
+
+    for task in finished_tasks:
+        print("\t {}".format(task.get("title")))
