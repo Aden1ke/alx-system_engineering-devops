@@ -3,7 +3,7 @@
 import requests
 import sys
 
-__name__ == "__main__":
+if __name__ == "__main__":
     base_url = "https://jsonplaceholder.typicode.com/users/"
 
     user_data = requests.get(base_url + "{}".format(av[1])).json()
